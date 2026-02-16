@@ -1,6 +1,6 @@
-# To learn more about how to use Nix to configure your environment
-# see: https://developers.google.com/idx/guides/customize-idx-env
 { pkgs, ... }: {
+  # To learn more about how to use Nix to configure your environment
+  # see: https://developers.google.com/idx/guides/customize-idx-env
   # Which nixpkgs channel to use.
   channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
@@ -20,9 +20,16 @@
         default.openFiles = ["index.php"];
       };
       # Runs when a workspace is (re)started
-      onStart= {
+      onStart = {
         run-server = "php -S localhost:3000 index.php";
       };
+      # Defines a preview panel for your web server
+      previews = [
+        {
+          port = 3000;
+          label = "PHP Server";
+        }
+      ];
     };
   };
 }
