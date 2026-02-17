@@ -10,7 +10,7 @@
 $db_host = 'localhost';
 $db_user = 'root'; // Default XAMPP username
 $db_pass = '';     // Default XAMPP password
-$db_name = 'roadmappr'; // The name of our database
+$db_name = 'roadmaps'; // The name of our database
 
 // Create a new mysqli object to connect to the database
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
