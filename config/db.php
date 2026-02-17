@@ -3,14 +3,14 @@
  * File: /config/db.php
  *
  * This file contains the database connection settings and the script to connect to the MySQL database.
- * It'''s included in other files where database access is needed.
+ * It's included in other files where database access is needed.
  */
 
 // Database credentials
 $db_host = 'localhost';
 $db_user = 'root'; // Default XAMPP username
 $db_pass = '';     // Default XAMPP password
-$db_name = 'roadmaps'; // The name of our database
+$db_name = 'roadmappr'; // The name of our database
 
 // Create a new mysqli object to connect to the database
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
